@@ -16,8 +16,12 @@
     max-width: 5em;
 }
 
-img {
-    width: 100rem;
+#imgcards {
+    width: 15rem;
+
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
 }
 
 .carousel-control-prev,
@@ -25,4 +29,27 @@ img {
     font-size: 3rem;
     font-weight: 700;
 
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mini-banner{
+    margin-top: -8rem;
+}
+.card{
+    width: 20rem;
+    height: 33rem;
+
+}
+
+@media(max-width500px){
+    #slider{
+        margin-top: 15rem;
+    }
+}
+#featured-container{
+    display: flex;
+    flex-direction: row;
 }
