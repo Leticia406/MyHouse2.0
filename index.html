@@ -3,20 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Projeto My House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Projeto My house</title>
 
     <!-- Google Fonts - Robot-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" 
-        rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -26,24 +23,20 @@
 </head>
 
 <header>
+    <!-- Definição da barra de navegação -->
     <nav class="navbar navbar-expand-lg fixed-top bg-stilo-nav">
         <section class="container py-3">
             <a href="#" class="navbar-brand">
-                <img class="img-fluid" src="images/casa.png" alt="Logo" >
+                <img class="img-fluid" src="images/casa.png" alt="Logo">
                 <span>My House</span>
             </a>
-            <button 
-                type="button"
-                class="navbar-toggler"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbar-items"
-                aria-controls="navbar-items"
-                aria-expanded="false"
-                aria-label="Toggle navigation"               
-                >
+            <!-- Criação do botão para representar o menu hamburguer -->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list"></i>
             </button>
 
+            <!-- Definição dos links do menu -->
             <section class="collapse navbar-collapse" id="navbar-items">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
@@ -53,240 +46,359 @@
                     <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
                 </ul>
             </section>
-        </section>        
+        </section>
     </nav>
 </header>
 
 <body>
-    <!-- Slider -->
+    <!-- Definição do Slider -->
     <section class="container" id="slider-container">
-        <section class="carousel slide" id="slider" data-bs-interval="300" data-bs-ride="carousel">
+        <section class="carousel slide" id="slider" data-bs-interval="1000" data-bs-ride="carousel">
             <section class="carousel-indicators">
 
-                <button 
-                    type="button" 
-                    class="active"
-                    data-bs-target="#slider"
-                    data-bs-slide-to="0"
-                    aria-current="true"
-                    aria-label="Slide 1"                    
-                ></button>
+                <!-- Criação dos botões que representam as imagens-->
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true"
+                    aria-label="Slide 1"></button>
 
-                <button 
-                    type="button"                     
-                    data-bs-target="#slider"
-                    data-bs-slide-to="1"                    
-                    aria-label="Slide 2"                    
-                ></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
 
-                <button 
-                type="button"                     
-                data-bs-target="#slider"
-                data-bs-slide-to="2"                    
-                aria-label="Slide 3"                    
-            ></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
 
-            <button 
-                type="button"                     
-                data-bs-target="#slider"
-                data-bs-slide-to="3"                    
-                aria-label="Slide 4"                    
-            ></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </section>
+
+            <!-- Definição do conteúdo do carrousel -->
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="images/img1.jpg" alt="Imagem 1" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Imagem 1</h5>
+                        <a href="#" class="btn btn-dark">Veja mais</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/img2.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Imagem 2</h5>
+                        <a href="#" class="btn btn-dark">Veja +</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/img3.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Imagem 3</h5>
+                        <a href="#" class="btn btn-dark">Veja mesmo</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="images/img4.jpg" alt="" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>Imagem 4</h5>
+                        <a href="#" class="btn btn-dark">Veja logo</a>
+                    </section>
+                </section>
+            </section>
+
+            <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-arrow-counterclockwise"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-arrow-clockwise"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
         </section>
 
-        <section class="carousel-inner">
-            <section class="carousel-item active">
-                <img src="images/img1.jpg" alt="Imagem 1" class="d-block w-100">
-                <section class="carousel-caption">
-                    <h5>Imagem 1</h5>
-                    <a href="#" class="btn btn-dark">Veja mais</a>
-                </section>
-            </section>
+        <!-- Criação dos cards / banners-->
+        <section class="col-12 col-md-10 offset-1" id="mini-banners">
+            <section class="row">
 
-            <section class="carousel-item">
-                <img src="images/img2.jpg" alt="" class="d-block w-100">
-                <section class="carousel-caption">
-                    <h5>Imagem 2</h5>
-                    <a href="#" class="btn btn-dark">Veja +</a>
-                </section>
-            </section>
-
-            <section class="carousel-item">
-                <img src="images/img3.jpg" alt="" class="d-block w-100">
-                <section class="carousel-caption">
-                    <h5>Imagem 3</h5>
-                    <a href="#" class="btn btn-dark">Veja mesmo</a>
-                </section>
-            </section>
-
-            <section class="carousel-item">
-                <img src="images/img4.jpg" alt="" class="d-block w-100">
-                <section class="carousel-caption">
-                    <h5>Imagem 4</h5>
-                    <a href="#" class="btn btn-dark">Veja logo</a>
-                </section>
-            </section>
-        </section> 
-        <button
-        type="button"
-        class="carousel-control-prev"
-        data-bs-target="#slider"
-        data-bs-slide="prev"
-        >
-        <i class="bi bi-caret-left-fill"></i>
-        </button>  
-        
-        <button
-        type="button"
-        class="carousel-control-next"
-        data-bs-target="#slider"
-        data-bs-slide="next"
-        >
-        <i class="bi bi-caret-right-fill"></i>
-        </button>
-    </section>
-
-    <!--Criaçaõ de banners -->
-    <section class="col-12 navbar-expand-lg" id="mini-banner">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <section class="row">
-
-            <section class="col-sm-3">
-                <section class="card text-center">
-                    <i class="bi bi-cart4"></i>
-                    <img id="imgcards" src="./images/viagem1.webp" alt="">
-                    <section class="card-body">
-                        <h4>Porto das Dunas</h4>
-                        <p>Porto das Dunas tem águas mornas, com formação de ondas — não é uma praia tão calminha quanto às da orla urbana de Fortaleza, mas é ótima altenativa para quem prefere uma praia com mar mais agitado e trecho de areia tranquilo.</p>
-                        <a href="" class="btn btn-dark">Veja aqui</a>
-                    </section>
-                </section>
-            </section>
-
-            <section class="col-sm-3">
-                <section class="card text-center">
-                    <i class="bi bi-cart4"></i>
-                    <img id="imgcards" src="./images/viagem2.avif" alt="">
-                    <section class="card-body">
-                        <h4>Lençóis Maranhenses</h4>
-                        <p>Os Lençóis Maranhenses são o maior campo de dunas da América do Sul, com uma área de 1.500 quilômetros quadrados, quase a mesma da cidade de São Paulo. Ali há alguns rios, dunas fixadas pela vegetação da restinga, manguezais e lagoas permanentes.</p>
-                        <a href="" class="btn btn-dark">Veja aqui</a>
-                    </section>
-                </section>
-            </section>
-
-            <section class="col-sm-3">
-                <section class="card text-center">
-                    <i class="bi bi-cart4"></i>
-                    <img id="imgcards" src="./images/viagem3.jpg" alt="">
-                    <section class="card-body">
-                        <h4>Porto Seguro</h4>
-                        <p>Porto Seguro é um dos lugares que mais chamam a atenção de turistas em todo o Brasil, assim como é a primeira cidade criada pelos portugueses no ano de 1535. A cidade conta com diversos monumentos históricos que remetem a época colonial.</p>
-                        <a href="" class="btn btn-dark">Veja aqui</a>
-                    </section>
-                </section>
-            </section>
-
-            <section class="col-sm-3">
-                <section class="card text-center">
-                    <i class="bi bi-cart4"></i>
-                    <img id="imgcards" src="./images/viagem4.jpg" alt="">
-                    <section class="card-body">
-                        <h4>Fernando de Noronha</h4>
-                        <p>Fernando de Noronha é um lugar onde a natureza ganhou contornos surpreendentes. A geografia privilegiada tem o mais belo conjunto de ilhas do Brasil — são mais de 7 mil quilômetros de litoral e 21 praias de beleza estonteante, o cenário perfeito para desfrutar de momentos inesquecíveis</p>
-                        <a href="" class="btn btn-dark">Veja aqui</a>
-                    </section>
-                </section>
-            </section>
-        </section>
-    </section>
-</section>    
-<!--Final baner-->
-
-    <!--destaques-->
-    <!--inicio do container-->
-    <section class="container" id="featured-container">
-        <section class="row">
-
-            <section class="col12 col-md-6">
-                <h3 class="title text-danger">Prejetos</h3>
-                <p class="subtitle text-bg-success">Conheça os nossos projetos</p>
-            </section>
-
-            <section class="col-12">
-                <section class="row g-3">       
-
-                        <!--Imagens-->  
-                        <section class="col-12 col-md-4" >
-                        <img src="./images/hallo1.jpg" alt="Projetos" class="img-fluid">
-                        <section class="banner-content">
-                            <h4 class="title cor_do_texto"></h4>
-                            <p class="subtitle cor_novo_texto"></p>
-                        </section>
-                    </section>    
-
-                        <!--Imagens-->  
-                        <section class="col-12 col-md-4" >
-                        <img src="./images/hallo2.jpg" alt="Projetos" class="img-fluid">
-                        <section class="col-12 md-3">
-                            <h4 class="title cor_do_texto"></h4>
-                            <p class="subtitle cor_novo_texto"></p>
-                        </section>
-                    </section>   
-
-                        <!--Imagens-->  
-                        <section class="col-12 col-md-4" >
-                        <img src="./images/hallo3.jpg" alt="Projetos" class="img-fluid">
-                        <section class="col-12 md-3">
-                            <h4 class="title cor_do_texto"></h4>
-                            <p class="subtitle cor_novo_texto"></p>
-                        </section>
-                    </section>        
-
-                        <!--Imagens-->  
-                        <section class="col-12 col-md-4" >
-                        <img src="./images/hallo4.jpg" alt="Projetos" class="img-fluid">
-                        <section class="col-12 md-3">
-                            <h4 class="title cor_do_texto"></h4>
-                            <p class="subtitle cor_novo_texto"></p>
-                        </section>
-                    </section>
-       
-
-                        <!--Imagens-->  
-                        <section class="col-12 col-md-4" >
-                        <img src="./images/hallo1.jpg" alt="Projetos" class="img-fluid">
-                        <section class="col-12 md-3">
-                            <h4 class="title cor_do_texto"></h4>
-                            <p class="subtitle cor_novo_texto"></p>
-                        </section>
-                    </section>     
-
-                        <!--Imagens-->  
-                        <section class="col-12 col-md-4" >
-                        <img src="./images/hallo2.jpg" alt="Projetos" class="img-fluid">
-                        <section class="col-12 md-3">
-                            <h4 class="title cor_do_texto"></h4>
-                            <p class="subtitle cor_novo_texto"></p>
-                        </section>
-                    </section>
+                <!-- Primeiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cart4"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Primeiro cartão</h5>
+                            <img src="./images/hallo1.jpg" alt="" id="imgCards">
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Repudiandae, est?</p>
+                            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
   
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        </section>
+                    </section>
+                </section>
 
+                <!-- Segundo card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-android2"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Segundo cartão</h5>
+                            <img src="./images/hallo2.jpg" alt="" id="imgCards">
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Repudiandae, est?</p>
+                            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        </section>
+                    </section>
+                </section>
 
+                <!-- Terceiro card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-backpack2"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Terceiro cartão</h5>
+                            <img src="./images/hallo3.jpg" alt="" id="imgCards">
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Repudiandae, est?</p>
+                            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        </section>
+                    </section>
+                </section>
 
+                <!-- Quarto card -->
+                <section class="col-12 col-md-3">
+                    <section class="card text-center">
+                        <i class="bi bi-bar-chart-line"></i>
+                        <section class="card-body">
+                            <h5 class="card-title primary-color">Quarto cartão</h5>
+                            <img src="./images/hallo4.jpg" alt="" id="imgCards">
+                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Repudiandae, est?</p>
+                            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore fugit rem sunt odit. Eius animi dolorem saepe aperiam, aspernatur rem distinctio temporibus placeat praesentium nostrum illum ad harum ducimus cumque.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        </section>
+                    </section>
+                </section>
 
-           <!--Fechamento--> 
+                <!-- Final dos cards -->
+            </section>
+        </section>
     </section>
+
+    <!-- Destaques -->
+    <!-- Container dos desatques -->
+    <section class="container" id="featured-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Trabalho em destaque</h2>
+            <p class="subtitle secondary-color">Conheça nossos projetos mais desafiadores</p>
+        </section>
+
+        <!-- Início das imagens-->
+        <section class="col-12" id="featured-images">
+            <section class="row g-4">
+
+                <section class="col-12 col-md-4">
+                    <img src="images/hallo1.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/hallo2.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/hallo3.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/hallo4.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/hallo3.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="images/hallo2.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+
+            </section>
+        </section>
+    </section>
+    <!-- Fim do container destaques -->
+
+
+    <!-- Informações -->
+    <section class="container" id="info-container">
+        <section class="col-12">
+            <h2 class="title primary-color">Informações</h2>
+            <p class="subtitle-secondary-color">Conheça nossos destaques</p>
+        </section>
+
+        <section class="col-12 col-md-4">
+            <p>Use o plugin JavaScript modal para criar diálogos em seu site para notificações e outros tipos de
+                conteúdos
+                customizados.</p>
+            <a href="https://getbootstrap.com/docs/5.3/components/modal/" class="btn btn-primary">Documentação Modal</a>
+        </section>
+
+        <!-- Nesta seção, iremos utilizar a adoção dos modais do Bootstrap -->
+        <section class="col-12 col-md-4">
+            <img src="images/modal.png" alt="" class="img-fluid">
+        </section>
+
     </section>
 
-    
+    <!-- Fim do container Informações -->
+    </section>
 
 
+    <!-- FOOTER -->
 
-    <!-- Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
-            crossorigin="anonymous" defer></script>
+    <!-- Informações -->
+    <section class="col-12">
+        <h2 class="title primary-color">Footer</h2>
+        <p class="subtitle-secondary-color">Contatos</p>
+    </section>
+
+    <footer class="container-fluid bg-dark-color" id="footer">
+        <section class="container">
+            <section class="row">
+                <!-- FOOTER TOP -->
+                <section class="col-12" id="footer-top">
+                    <section class="row justify-content-between">
+                        <section class="col-4">
+                            <h2>
+                                Mi casa
+                            </h2>
+                        </section>
+
+                        <section class="col-12 col-md-4">
+                            <p>Formulários
+                                Exemplos, instruções para estilizar campos de formulários, opções de layout e
+                                componentes personalizados para criar uma grande variedade de formulários..</p>
+                            <a href="https://getbootstrap.com/docs/5.3/forms/overview/"
+                                class="btn btn-primary">Documentação Forms</a>
+                        </section>
+
+                        <section class="col-4" id="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Bootstrap JS-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous" defer></script>
 </body>
 
 </html>
