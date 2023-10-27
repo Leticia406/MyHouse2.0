@@ -4,10 +4,22 @@
     padding: 0;
     font-family: 'Lato', sans-serif;
   }
+
+  body{
+    background-color: #083D77;
+  }
   
+  .bg-cor-bacana {
+    background-color: #083D77;
+
+  }
+  #modal-borda{
+    border-radius: 3em;
+    color: #4BB3FD;
+  }
   /* Formata o background do menu */
   .bg-stilo-nav {
-    background-color:#fca311;
+    background-color:#EBEBD3;
   }
   
   .bg-secondary-color {
@@ -19,7 +31,7 @@
   }
   
   .primary-color {
-    color: #050505;
+    color: black;
   }
   
   .secondary-color {
@@ -137,7 +149,8 @@
   
   #mini-banners .card {
     padding: 2em 0.3em;
-    border-radius: 0;
+    border-radius: 3em;
+    background-color: #EBEBD3;
   }
   
   #mini-banners i {
@@ -155,7 +168,12 @@
   
   #mini-banners .card {
     margin-bottom: 1em;
+    height: 38em;
   }
+  #mini-banners p{
+    height: 10rem;
+  }
+
   
   @media (min-width: 768px) {
     #mini-banners {
@@ -163,7 +181,9 @@
     }
   }
   #imgCards{
-    height: 100px;
+    height: 130px;
+    margin-bottom: 0.5em;
+    border-radius: 5%;
   }
   
   /* DESTAQUES */
@@ -212,6 +232,11 @@
     opacity: 0.6;
     transition: 0.5s;
   }
+
+  #viaj-img{
+    height: 250px;
+    width: 500px;
+  }
   
   @media (min-width: 768px) {
     .title {
@@ -226,8 +251,13 @@
       opacity: 0;
     }
   }
+
+  #vjg-dest{
+    color: #EBEBD3;
+  }
   
   /* INFO */
+
   #info-content {
     margin-bottom: 4em;
     padding: 4em 1em;
@@ -252,7 +282,8 @@
       padding: 3.5em;
     }
   }
-  
+
+
   /* FOOTER TOP */
   #footer {
     padding: 3em 2em;
@@ -314,4 +345,22 @@
   
   #links-container a:hover {
     color: #fff;
+  }
+
+  #sobre{
+    color: #EBEBD3;
+    font-size: 1.5em
+  }
+  #sobre2{
+    color: #EBEBD3;
+  }
+  #titulo-sob{
+    color:#EBEBD3;
+  }
+  #modal-faq{
+    display: flex;
+    justify-content:flex-end ;
+    height: 5em;
+    width: 15em;
+    margin-top: 2.9em;
   }

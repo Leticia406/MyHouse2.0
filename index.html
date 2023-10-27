@@ -30,6 +30,7 @@
                 <img class="img-fluid" src="images/casa.png" alt="Logo">
                 <span>My House</span>
             </a>
+        
             <!-- Criação do botão para representar o menu hamburguer -->
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
                 aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,10 +41,10 @@
             <section class="collapse navbar-collapse" id="navbar-items">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Dicas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mini-banners">Dicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured-container">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#info-container">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer-top">Contato</a></li>
                 </ul>
             </section>
         </section>
@@ -72,7 +73,7 @@
                 <section class="carousel-item active">
                     <img src="images/img1.jpg" alt="Imagem 1" class="d-block w-100">
                     <section class="carousel-caption">
-                        <h5>Imagem 1</h5>
+                        <h5></h5>
                         <a href="#" class="btn btn-dark">Veja mais</a>
                     </section>
                 </section>
@@ -80,7 +81,7 @@
                 <section class="carousel-item">
                     <img src="images/img2.jpg" alt="" class="d-block w-100">
                     <section class="carousel-caption">
-                        <h5>Imagem 2</h5>
+                        <h5></h5>
                         <a href="#" class="btn btn-dark">Veja +</a>
                     </section>
                 </section>
@@ -88,7 +89,7 @@
                 <section class="carousel-item">
                     <img src="images/img3.jpg" alt="" class="d-block w-100">
                     <section class="carousel-caption">
-                        <h5>Imagem 3</h5>
+                        <h5></h5>
                         <a href="#" class="btn btn-dark">Veja mesmo</a>
                     </section>
                 </section>
@@ -96,19 +97,19 @@
                 <section class="carousel-item">
                     <img src="images/img4.jpg" alt="" class="d-block w-100">
                     <section class="carousel-caption">
-                        <h5>Imagem 4</h5>
+                        <h5></h5>
                         <a href="#" class="btn btn-dark">Veja logo</a>
                     </section>
                 </section>
             </section>
 
             <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
-                <i class="bi bi-arrow-counterclockwise"></i>
+                <i class="bi bi-arrow-bar-left"></i>
                 <span class="visually-hidden">Previous</span>
             </button>
 
             <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
-                <i class="bi bi-arrow-clockwise"></i>
+                <i class="bi bi-arrow-bar-right"></i>
                 <span class="visually-hidden">Next</span>
             </button>
         </section>
@@ -120,27 +121,32 @@
                 <!-- Primeiro card -->
                 <section class="col-12 col-md-3">
                     <section class="card text-center">
-                        <i class="bi bi-cart4"></i>
+                        <i class="bi bi-airplane-fill"></i>
                         <section class="card-body">
-                            <h5 class="card-title primary-color">Primeiro cartão</h5>
-                            <img src="./images/hallo1.jpg" alt="" id="imgCards">
-                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Repudiandae, est?</p>
+                            <h5 class="card-title primary-color">Porto das Dunas</h5>
+                            <img src="./images/viagem1.webp" alt="" id="imgCards">
+                            <p class="card-text secondary-color">
+                                Porto das Dunas é uma praia localizada no município de Aquiraz, no estado do Ceará. A praia é conhecida por suas dunas brancas, mar cristalino e vegetação exuberante. 
+                                </p>
                             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
+<button type="button" class="btn bg-cor-bacana" data-bs-toggle="modal" data-bs-target="#dica1" id="modal-borda">
+    Hoteis | pousada
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="dica1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Hoteis | pousada Porto das Dunas</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+            <ul>
+                <li>1. Wellness Beach Park Resort</li>
+                <li>2. Suites Beach Park Resort</li>
+                <li>3. Acqua Beach Park Resort</li>
+            </ul>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -156,27 +162,31 @@
                 <!-- Segundo card -->
                 <section class="col-12 col-md-3">
                     <section class="card text-center">
-                        <i class="bi bi-android2"></i>
+                        <i class="bi bi-airplane-fill"></i>
                         <section class="card-body">
-                            <h5 class="card-title primary-color">Segundo cartão</h5>
-                            <img src="./images/hallo2.jpg" alt="" id="imgCards">
-                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Repudiandae, est?</p>
+                            <h5 class="card-title primary-color">Lençóis Maranhenses</h5>
+                            <img src="./images/viagem2.avif" alt="" id="imgCards">
+                            <p class="card-text secondary-color">Os Lençóis Maranhenses esta localizado no estado do Maranhão, no nordeste do Brasil. 
+                                É conhecido por sua paisagem desértica de dunas de areia branca e lagoas sazonais de água doce. </p>
                             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
+<button type="button" class="btn bg-cor-bacana" data-bs-toggle="modal" data-bs-target="#dica2" id="modal-borda">
+    Hoteis | pousada
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="dica2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Hoteis | pousada Lençóis Maranhenses </h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+            <ul id="maranhao">
+                <li>1. Porto Preguiças Resort</li>
+                <li>2. Pousada Vila de Charme</li>
+                <li>3. Pousada Marcone Lima </li>
+            </ul>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -192,27 +202,31 @@
                 <!-- Terceiro card -->
                 <section class="col-12 col-md-3">
                     <section class="card text-center">
-                        <i class="bi bi-backpack2"></i>
+                        <i class="bi bi-airplane-fill"></i>
                         <section class="card-body">
-                            <h5 class="card-title primary-color">Terceiro cartão</h5>
-                            <img src="./images/hallo3.jpg" alt="" id="imgCards">
-                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Repudiandae, est?</p>
+                            <h5 class="card-title primary-color">Porto Seguro</h5>
+                            <img src="./images/viagem3.jpg" alt="" id="imgCards">
+                            <p class="card-text secondary-color">Porto Seguro é uma cidade turística localizada no litoral sul da Bahia, Brasil. 
+                                A cidade é conhecida por suas praias paradisíacas, história rica e cultura vibrante.</p>
                             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
+<button type="button" class="btn bg-cor-bacana" data-bs-toggle="modal" data-bs-target="#dica3" id="modal-borda">
+    Hoteis | pousada
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="dica3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Hoteis | pousada Porto Seguro</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+            <ul> 
+                <li>1. Villas de Trancoso Hotel e Resort </li>
+                <li>2. Soleluna Casa Pousada </li>
+                <li>3. Saint Tropez Praia Hotel </li>
+            </ul>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -228,31 +242,36 @@
                 <!-- Quarto card -->
                 <section class="col-12 col-md-3">
                     <section class="card text-center">
-                        <i class="bi bi-bar-chart-line"></i>
+                        <i class="bi bi-airplane-fill"></i>
                         <section class="card-body">
-                            <h5 class="card-title primary-color">Quarto cartão</h5>
-                            <img src="./images/hallo4.jpg" alt="" id="imgCards">
-                            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Repudiandae, est?</p>
+                            <h5 class="card-title primary-color">Baía dos Porcos</h5>
+                            <img src="./images/viagem4.jpg" alt="" id="imgCards">
+                            <p class="card-text secondary-color">
+                                A Baía dos Porcos é uma baía localizada no arquipélago de Fernando de Noronha, no estado de Pernambuco, Brasil. 
+                                É uma praia  conhecida por sua beleza natural, com águas cristalinas e areia branca.  </p>
                             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
+<button type="button" class="btn bg-cor-bacana" data-bs-toggle="modal" data-bs-target="#dica4" id="modal-borda">
+    Hoteis | pousada
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="dica4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Hoteis | pousada Baía dos Porcos</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="botao-modal"></button>
         </div>
         <div class="modal-body">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore fugit rem sunt odit. Eius animi dolorem saepe aperiam, aspernatur rem distinctio temporibus placeat praesentium nostrum illum ad harum ducimus cumque.
+            <ul> 
+                <li>1. Dolphin Hotel </li>
+                <li>2. Pousada Maravilha </li>
+                <li>3. Pousada Do Vale </li>
+            </ul>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar</button>
         </div>
       </div>
     </div>
@@ -270,8 +289,8 @@
     <!-- Container dos desatques -->
     <section class="container" id="featured-container">
         <section class="col-12">
-            <h2 class="title primary-color">Trabalho em destaque</h2>
-            <p class="subtitle secondary-color">Conheça nossos projetos mais desafiadores</p>
+            <h2 class="title primary-color" id="vjg-dest">Viagens em destaque</h2>
+            <p class="subtitle secondary-color" ></p>
         </section>
 
         <!-- Início das imagens-->
@@ -279,50 +298,50 @@
             <section class="row g-4">
 
                 <section class="col-12 col-md-4">
-                    <img src="images/hallo1.jpg" alt="" class="img-fluid">
+                    <img src="images/viagem5.webp" alt="" class="img-fluid" id="viaj-img">
                     <section class="banner-content">
                         <p>Categoria</p>
-                        <h3>Nome do projeto</h3>
+                        <h3>Barra Grande (PI)</h3>
                     </section>
                 </section>
 
                 <section class="col-12 col-md-4">
-                    <img src="images/hallo2.jpg" alt="" class="img-fluid">
+                    <img src="images/viagem10.jpg" alt="" class="img-fluid" id="viaj-img">
                     <section class="banner-content">
                         <p>Categoria</p>
-                        <h3>Nome do projeto</h3>
+                        <h3>Foz do Iguaçu (PR)</h3>
                     </section>
                 </section>
 
                 <section class="col-12 col-md-4">
-                    <img src="images/hallo3.jpg" alt="" class="img-fluid">
+                    <img src="images/viagem7.webp" alt="" class="img-fluid" id="viaj-img">
                     <section class="banner-content">
                         <p>Categoria</p>
-                        <h3>Nome do projeto</h3>
+                        <h3>Paraty (RJ)</h3>
                     </section>
                 </section>
 
                 <section class="col-12 col-md-4">
-                    <img src="images/hallo4.jpg" alt="" class="img-fluid">
+                    <img src="images/viagem8.jpg" alt="" class="img-fluid" id="viaj-img">
                     <section class="banner-content">
                         <p>Categoria</p>
-                        <h3>Nome do projeto</h3>
+                        <h3>Ilhabela (SP)</h3>
                     </section>
                 </section>
 
                 <section class="col-12 col-md-4">
-                    <img src="images/hallo3.jpg" alt="" class="img-fluid">
+                    <img src="images/viagem9.jpg" alt="" class="img-fluid"  id="viaj-img">
                     <section class="banner-content">
                         <p>Categoria</p>
-                        <h3>Nome do projeto</h3>
+                        <h3>Barra de Ibiraquera (SC)</h3>
                     </section>
                 </section>
 
                 <section class="col-12 col-md-4">
-                    <img src="images/hallo2.jpg" alt="" class="img-fluid">
+                    <img src="images/viagem6.jpg" alt="" class="img-fluid" id="viaj-img">
                     <section class="banner-content">
                         <p>Categoria</p>
-                        <h3>Nome do projeto</h3>
+                        <h3>Jalapão (TO)</h3>
                     </section>
                 </section>
 
@@ -336,19 +355,20 @@
     <!-- Informações -->
     <section class="container" id="info-container">
         <section class="col-12">
-            <h2 class="title primary-color">Informações</h2>
-            <p class="subtitle-secondary-color">Conheça nossos destaques</p>
+            <h2 class="title primary-color" id="titulo-sob">Sobre nós</h2>
+            <p class="subtitle-secondary-color" id="sobre">
+                Nosso site de guia de viagens: uma ferramenta essencial para o planejamento de viagens.
+                </p>
         </section>
 
         <section class="col-12 col-md-4">
-            <p>Use o plugin JavaScript modal para criar diálogos em seu site para notificações e outros tipos de
-                conteúdos
-                customizados.</p>
-            <a href="https://getbootstrap.com/docs/5.3/components/modal/" class="btn btn-primary">Documentação Modal</a>
+            <p id="sobre2">Os sites de guia de viagens são uma ferramenta essencial para o planejamento de viagens. 
+                Nós oferecemos uma variedade de informações, desde dicas de hospedagem, até informações sobre viagens em destaques.</p>
         </section>
 
         <!-- Nesta seção, iremos utilizar a adoção dos modais do Bootstrap -->
         <section class="col-12 col-md-4">
+
             <img src="images/modal.png" alt="" class="img-fluid">
         </section>
 
@@ -362,8 +382,8 @@
 
     <!-- Informações -->
     <section class="col-12">
-        <h2 class="title primary-color">Footer</h2>
-        <p class="subtitle-secondary-color">Contatos</p>
+        <h2 class="title primary-color">Contatos</h2>
+        <p class="subtitle-secondary-color"></p>
     </section>
 
     <footer class="container-fluid bg-dark-color" id="footer">
@@ -374,23 +394,52 @@
                     <section class="row justify-content-between">
                         <section class="col-4">
                             <h2>
-                                Mi casa
+                                My House
                             </h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2112.9666398919776!2d-48.50558219216004!3d-20.93516458984059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1698418247842!5m2!1spt-BR!2sbr" 
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <!--Modal de duvidas-->
+
                         </section>
 
-                        <section class="col-12 col-md-4">
-                            <p>Formulários
-                                Exemplos, instruções para estilizar campos de formulários, opções de layout e
-                                componentes personalizados para criar uma grande variedade de formulários..</p>
-                            <a href="https://getbootstrap.com/docs/5.3/forms/overview/"
-                                class="btn btn-primary">Documentação Forms</a>
+                        <section class="col-12 col-md-4" id="modal-faq">
+
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Caixa de duvidas</button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Nova mensagem</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Destinatário:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Mensagem:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-primary">Enviar mensagem</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
                         </section>
 
                         <section class="col-4" id="social-icons">
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-youtube"></i>
-                            <i class="bi bi-twitter"></i>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-youtube"></i></a>
+                            <a href=""><i class="bi bi-twitter"></i></a>
                         </section>
                     </section>
                 </section>
@@ -402,3 +451,5 @@
 </body>
 
 </html>
+
+
