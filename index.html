@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Projeto My house</title>
+    <title>My house 2.0</title>
+
+    <!-- Inclusao do Bootrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 
     <!-- Google Fonts - Robot-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +33,7 @@
         <section class="container py-3">
             <a href="#" class="navbar-brand">
                 <img class="img-fluid" src="images/casa.png" alt="Logo">
-                <span>My House</span>
+                <span>My House 2.0</span>
             </a>
         
             <!-- Criação do botão para representar o menu hamburguer -->
@@ -52,6 +57,7 @@
 </header>
 
 <body>
+<footer>
     <!-- Definição do Slider -->
     <section class="container" id="slider-container">
         <section class="carousel slide" id="slider" data-bs-interval="1000" data-bs-ride="carousel">
@@ -112,41 +118,49 @@
                 <i class="bi bi-arrow-bar-right"></i>
                 <span class="visually-hidden">Next</span>
             </button>
-        </section>
+      </section>
 
         <!-- Criação dos cards / banners-->
-        <section class="col-12 col-md-10 offset-1" id="mini-banners">
+        <section class="col-12 col-md-9 offset-1" id="mini-banners">
             <section class="row">
 
                 <!-- Primeiro card -->
-                <section class="col-12 col-md-3">
+                <section class="col-12 col-md-6">
                     <section class="card text-center">
-                        <i class="bi bi-airplane-fill"></i>
                         <section class="card-body">
-                            <h5 class="card-title primary-color">Porto das Dunas</h5>
-                            <img src="./images/viagem1.webp" alt="" id="imgCards">
+                            <i class="bi bi-plus"></i>
+                            <h5 class="card-title primary-color">Creat - Post</h5>
+                            
                             <p class="card-text secondary-color">
-                                Porto das Dunas é uma praia localizada no município de Aquiraz, no estado do Ceará. A praia é conhecida por suas dunas brancas, mar cristalino e vegetação exuberante. 
+                              Use o método POST para atualizar ou inserir um recurso.
+                               Para atualizar um recurso da estrutura de objeto, o ID do objeto principal é necessário. 
                                 </p>
+
+
                             <!-- Button trigger modal -->
-<button type="button" class="btn bg-cor-bacana" data-bs-toggle="modal" data-bs-target="#dica1" id="modal-borda">
-    Hoteis | pousada
+<!-- Button salvar -->
+<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Salvar
+  </button>
+
+  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Editar
+  </button>
+
+  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Adicionar
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="dica1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Hoteis | pousada Porto das Dunas</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <ul>
-                <li>1. Wellness Beach Park Resort</li>
-                <li>2. Suites Beach Park Resort</li>
-                <li>3. Acqua Beach Park Resort</li>
-            </ul>
+          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -160,33 +174,39 @@
                 </section>
 
                 <!-- Segundo card -->
-                <section class="col-12 col-md-3">
+                <section class="col-12 col-md-6">
                     <section class="card text-center">
-                        <i class="bi bi-airplane-fill"></i>
                         <section class="card-body">
-                            <h5 class="card-title primary-color">Lençóis Maranhenses</h5>
-                            <img src="./images/viagem2.avif" alt="" id="imgCards">
-                            <p class="card-text secondary-color">Os Lençóis Maranhenses esta localizado no estado do Maranhão, no nordeste do Brasil. 
-                                É conhecido por sua paisagem desértica de dunas de areia branca e lagoas sazonais de água doce. </p>
-                            <!-- Button trigger modal -->
-<button type="button" class="btn bg-cor-bacana" data-bs-toggle="modal" data-bs-target="#dica2" id="modal-borda">
-    Hoteis | pousada
+                          <i class="bi bi-book"></i>
+                            <h5 class="card-title primary-color">Read - Get</h5>
+                            
+                            <p class="card-text secondary-color">O método GET solicita a representação de um recurso específico. 
+                              Requisições utilizando o método GET devem retornar apenas dados.</p>
+
+                             <!-- Button trigger modal -->
+<!-- Button salvar -->
+<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Salvar
+  </button>
+
+  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Editar
+  </button>
+
+  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Adicionar
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="dica2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Hoteis | pousada Lençóis Maranhenses </h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <ul id="maranhao">
-                <li>1. Porto Preguiças Resort</li>
-                <li>2. Pousada Vila de Charme</li>
-                <li>3. Pousada Marcone Lima </li>
-            </ul>
+          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -200,33 +220,85 @@
                 </section>
 
                 <!-- Terceiro card -->
-                <section class="col-12 col-md-3">
+                <section class="col-12 col-md-6">
                     <section class="card text-center">
-                        <i class="bi bi-airplane-fill"></i>
                         <section class="card-body">
-                            <h5 class="card-title primary-color">Porto Seguro</h5>
-                            <img src="./images/viagem3.jpg" alt="" id="imgCards">
-                            <p class="card-text secondary-color">Porto Seguro é uma cidade turística localizada no litoral sul da Bahia, Brasil. 
-                                A cidade é conhecida por suas praias paradisíacas, história rica e cultura vibrante.</p>
+                          <i class="bi bi-arrow-counterclockwise"></i>
+                            <h5 class="card-title primary-color">Update - Put</h5>
+                            
+                            <p class="card-text secondary-color"> o método PUT para atualizar ou inserir um recurso. Uma solicitação de atualização deve fornecer o ID exclusivo do recurso.
+                              Para atualizar um recurso da estrutura de objeto, o ID do objeto principal é necessário.</p>
+
                             <!-- Button trigger modal -->
-<button type="button" class="btn bg-cor-bacana" data-bs-toggle="modal" data-bs-target="#dica3" id="modal-borda">
-    Hoteis | pousada
+<!-- Button salvar -->
+<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Salvar
+  </button>
+
+  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Editar
+  </button>
+
+  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Adicionar
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="dica3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Hoteis | pousada Porto Seguro</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <ul> 
-                <li>1. Villas de Trancoso Hotel e Resort </li>
-                <li>2. Soleluna Casa Pousada </li>
-                <li>3. Saint Tropez Praia Hotel </li>
-            </ul>
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </section>
+    </section>
+</section>
+            <!-- Quarto card -->
+            <section class="col-12 col-md-6">
+                <section class="card text-center">
+                        
+            <section class="card-body">
+                <i class="bi bi-trash3"></i>
+                    <h5 class="card-title primary-color">Delete - Delete</h5>
+                        
+                        <p class="card-text secondary-color">
+                          O método DELETE requer o ID exclusivo do recurso.</p>
+
+                            <!-- Button trigger modal -->
+<!-- Button salvar -->
+<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Salvar
+  </button>
+
+  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Editar
+  </button>
+
+  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Adicionar
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -238,47 +310,8 @@
                         </section>
                     </section>
                 </section>
-
-                <!-- Quarto card -->
-                <section class="col-12 col-md-3">
-                    <section class="card text-center">
-                        <i class="bi bi-airplane-fill"></i>
-                        <section class="card-body">
-                            <h5 class="card-title primary-color">Baía dos Porcos</h5>
-                            <img src="./images/viagem4.jpg" alt="" id="imgCards">
-                            <p class="card-text secondary-color">
-                                A Baía dos Porcos é uma baía localizada no arquipélago de Fernando de Noronha, no estado de Pernambuco, Brasil. 
-                                É uma praia  conhecida por sua beleza natural, com águas cristalinas e areia branca.  </p>
-                            <!-- Button trigger modal -->
-<button type="button" class="btn bg-cor-bacana" data-bs-toggle="modal" data-bs-target="#dica4" id="modal-borda">
-    Hoteis | pousada
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="dica4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Hoteis | pousada Baía dos Porcos</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="botao-modal"></button>
-        </div>
-        <div class="modal-body">
-            <ul> 
-                <li>1. Dolphin Hotel </li>
-                <li>2. Pousada Maravilha </li>
-                <li>3. Pousada Do Vale </li>
-            </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary">Salvar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-                        </section>
-                    </section>
-                </section>
+</footer>
+                
 
                 <!-- Final dos cards -->
             </section>
@@ -444,12 +477,16 @@
                     </section>
                 </section>
 
-                <!-- Bootstrap JS-->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-                    crossorigin="anonymous" defer></script>
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
 
-
+<!-- echo "# novo" >> README.md 
+git init 
+git add README.md 
+git commit -m "first commit" 
+git branch -M main 
+git remote add origin https://github.com/Leticia406/novo.git
+ git push - sua origem principal -->

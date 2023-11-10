@@ -144,7 +144,8 @@
   
   /* MINI BANNERS */
   #mini-banners {
-    margin-bottom: 4em;
+    margin-bottom: 5em;
+    
   }
   
   #mini-banners .card {
@@ -168,10 +169,11 @@
   
   #mini-banners .card {
     margin-bottom: 1em;
-    height: 38em;
+    height: 25em;
   }
   #mini-banners p{
-    height: 10rem;
+    height: 5rem;
+    width: 1;
   }
 
   
