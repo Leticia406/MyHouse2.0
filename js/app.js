@@ -12,18 +12,7 @@ app.get("/produtos", (req, res)=>{
 })
 
 app.post("/produtos/novos", (req,res)=>{
-    const {CPF} = req.params('CPF');
-    const {Nome } = req.params('Nome');
-    const {Email} = req.params("Email");
-    const {Cidade} = req.params("Cidade");
-    const {CEP} = req.params("CEP");
-    const {Numero} = req.params("Numero");
-    const {Estado} = req.params("Estado");
-    const {RG} = req.params("RG");
-    const {Telefone} = req.params("Telefone")
-    const {Data_Nasc} = req.params("Data_Nasc")
-
-
+    const {CPF, Nome, Email, Cidade, CEP, Numero, Estado, RG, Telefone, Data_Nasc} = req.body;
     lista_dados.push(new Cliente(lista_dados.length + 1, 
     CPF, Nome, Email, Cidade, CEP, Numero, Estado, RG, Telefone, Data_Nasc));
     return res.status(200).json("cadastrado com sucesso")
@@ -51,3 +40,4 @@ app.delete("/produtos/excluir/:id", (req, res)=>{
 app.listen(3000, ()=>{
     console.log("Running!")
 })
+
