@@ -1,7 +1,10 @@
 import  express from "express";
 import cors from "cors";
-import { Cliente, lista_dados } from "./Clientes.js";
+import { Cliente } from "./Clientes.js";
 
+let lista_dados = [
+    new Cliente(1,'47350005857', "Leticia Pires Nogueira", "asdfghjkl@gmail.com", "Bebedouro", '14708064', '179999-9999', "Sao Paulo", '5555555',"99999999999", "01/02/2007" )]
+                // CPF, Nome, Email, Cidade, CEP, Numero, Estado, RG, Telefone, Data_Nasc
 const app = express();
 app.use(express.json());
 app.use(cors());

@@ -166,7 +166,7 @@
             <input type="date" class="form-control" id="Data_Nasc" required>
           </div>
           <div class="col-12">
-            <button class="btn btn-primary" sr >Enviar formulário</button>
+            <button class="btn btn-primary" id="post">Enviar formulário</button>
           </div>
         </form>
 
@@ -213,33 +213,21 @@
           <thead>
             <tr id="form">
 
-              <th scope="col" id="CPF">CPF</th>
-              <th scope="col" id="Nome">Nome</th>
-              <th scope="col" id="Email">Email</th>
-              <th scope="col" id="Cidade">Cidade</th>
-              <th scope="col" id="CEP">CEP</th>
-              <th scope="col" id="Numero">Numero</th>
-              <th scope="col" id="Estado">Estado</th>
-              <th scope="col" id="RG">RG</th>
-              <th scope="col" id="Telefone">Telefone</th>
-              <th scope="col" id="Data_Nasc">Data Nasc</th>
+              <th scope="col" >CPF</th>
+              <th scope="col" >Nome</th>
+              <th scope="col" >Email</th>
+              <th scope="col" >Cidade</th>
+              <th scope="col" >CEP</th>
+              <th scope="col" >Numero</th>
+              <th scope="col" >Estado</th>
+              <th scope="col" >RG</th>
+              <th scope="col" >Telefone</th>
+              <th scope="col" >Data Nasc</th>
 
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row"></th>
-              <td>47350005857</td>
-              <td>leticia</td>
-              <td>@gmail.com</td>
-              <td>bebedouro</td>
-              <td>14708064</td>
-              <td>sao</td>
-              <td>05050550</td>
-              <td>1799999999</td>
-              <td>01022007</td>
-            </tr>
-
+          <tbody id="body">
+          
           </tbody>
         </table>
 
@@ -361,7 +349,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js "></script>
 
   <!-- <script src="./js/main.js"></script> -->
-  <script src="./js/novo.js"></script>
+  <script src="./js/novo.js"></script> 
+  <script src="./js/post_put.js"></script>
+ 
   <script src="./js/main.js"></script>
  
 </body>

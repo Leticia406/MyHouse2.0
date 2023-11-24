@@ -1,4 +1,5 @@
 export class Cliente{
+    id;
     CPF;
     Nome;
     Email;
@@ -10,7 +11,8 @@ export class Cliente{
     Telefone;
     Data_Nasc;
 
-    constructor(CPF, Nome, Email, Cidade, CEP, Numero, Estado, RG, Telefone, Data_Nasc){
+    constructor(id, CPF, Nome, Email, Cidade, CEP, Numero, Estado, RG, Telefone, Data_Nasc){
+        this.id = id;
         this.CPF = CPF;
         this.Nome = Nome;
         this.Email = Email;
@@ -24,6 +26,3 @@ export class Cliente{
 
     }
 }
-
-export let lista_dados = [
-    new Cliente (47350005857, "Leticia Pires Nogueira", "asdfghjkl@gmail.com", "Bebedouro", 14708064, 179999-9999, "Sao Paulo", 5555555, "01/02/2007" )]

@@ -1,12 +1,11 @@
 document.querySelector("#btn").addEventListener('click',()=>{
-    console.log("clicou")
     fetch("http://localhost:3000/produtos")
     .then((resposta)=>{
         if(resposta.status == 200){
             resposta.json().then((dados)=>{
                 // dados é a lista de objetos que vem
                 // da API
-                const div = document.querySelector("#form");
+                const div = document.querySelector("#body");
 
                 dados.map((produto)=>{
 
@@ -42,7 +41,6 @@ document.querySelector("#btn").addEventListener('click',()=>{
 
                     const linha = document.createElement("tr")
                     linha.append(CPF,Nome,Email,Cidade,CEP,Numero,Estado,RG,Telefone,Data_Nasc)
-                    console.log(linha)
                     div.append(linha)
                 })
             })
